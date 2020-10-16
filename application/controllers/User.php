@@ -64,10 +64,11 @@ class User extends CI_Controller {
 	{
         
         $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required',
                         array('required' => 'You must provide a %s.')
         );
-        $this->form_validation->set_rules('email', 'Email', 'required');
+        
         $this->form_validation->set_rules('type', 'Type', 'required');
 
         if ($this->form_validation->run() == FALSE)
@@ -133,10 +134,11 @@ class User extends CI_Controller {
         $id = $this->input->post('id');
 
         $this->form_validation->set_rules('name', 'Name', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required',
                         array('required' => 'You must provide a %s.')
         );
-        $this->form_validation->set_rules('email', 'Email', 'required');
+        
         $this->form_validation->set_rules('type', 'Type', 'required');
 
         if ($this->form_validation->run() == FALSE)

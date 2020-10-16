@@ -81,3 +81,12 @@
     </div><!--/span-->
 
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#rejected_student_dataTables').DataTable({
+            "paging": true,
+            "ordering": false,
+        });
+    });
+</script>

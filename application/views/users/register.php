@@ -84,13 +84,6 @@
                                     <p><?php //echo form_error('name'); ?></p>
                                     
                                 </div>
-                                <div class="clearfix"></div>
-
-                                <div class="input-prepend" title="Password">
-                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
-                                    <input class="input-large span10" name="password" id="password" type="password" placeholder="Password"/>
-                                    <?php //echo form_error('password'); ?>
-                                </div>
                                 
                                 <div class="clearfix"></div>
                                 <div class="input-prepend" title="Username">
@@ -99,7 +92,13 @@
                                     <?php //echo form_error('email'); ?>
                                 </div>
                                 
-                                
+                                <div class="clearfix"></div>
+
+                                <div class="input-prepend" title="Password">
+                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
+                                    <input class="input-large span10" name="password" id="password" type="password" placeholder="Password"/>
+                                    <?php //echo form_error('password'); ?>
+                                </div>
                                 <div class="clearfix"></div>
                                 <div class="input-prepend" >
                                     <span class="add-on"><i class="halflings-icon user"></i></span>

@@ -1,7 +1,7 @@
 <div class="row-fluid sortable">		
     <div class="box span12">
         <div class="box-header" data-original-title>
-            <h2><i class="halflings-icon user"></i><span class="break"></span>Manage Users</h2>
+            <h2><i class="halflings-icon user"></i><span class="break"></span>Edit Users</h2>
             <div class="box-icon">
                 <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                 <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -53,9 +53,19 @@
                                 <div class="input-prepend" >
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
                                     <select id="selectError3" class="input-large span10" name="type">
-                                        <option disabled="true" selected="">Type</option>
+                                    <?php if ($user_byid[0]['type'] == 1 ) { ?>
+                                        
+                                        <option value="1" selected="">Admin</option>
+                                        <option value="2">Manger</option>
+                                    <?php  } elseif ($user_byid[0]['type'] == 2 ) { ?>
+                                        
+                                        <option value="1" >Admin</option>
+                                        <option value="2" selected="">Manger</option>
+                                    <?php  } else { ?>
+                                        <option value="" selected=''>Type</option>
                                         <option value="1">Admin</option>
                                         <option value="2">Manger</option>
+                                    <?php  } ?>
                                     </select>
                                     <?php //echo form_error('type'); ?>
                                 </div>
