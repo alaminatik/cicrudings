@@ -74,31 +74,32 @@
                             ?>
                         </h3>
                         <h2 align='center'>User registration</h2>
-                        <?php //echo validation_errors(); ?>
+                        <a style='color:red;'><?php echo validation_errors(); ?></a>
                         <form class="form-horizontal" action="<?php echo base_url(); ?>adduser" method="post">
                             <fieldset>
 
                                 <div class="input-prepend" title="Username">
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
                                     <input class="input-large span10" name="name" id="username" type="text" placeholder="Name"/>
-                                    <p><?php echo form_error('name'); ?></p>
+                                    <p><?php //echo form_error('name'); ?></p>
                                     
+                                </div>
+                                <div class="clearfix"></div>
+
+                                <div class="input-prepend" title="Password">
+                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
+                                    <input class="input-large span10" name="password" id="password" type="password" placeholder="Password"/>
+                                    <?php //echo form_error('password'); ?>
                                 </div>
                                 
                                 <div class="clearfix"></div>
                                 <div class="input-prepend" title="Username">
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
                                     <input class="input-large span10" name="email" id="username" type="email" placeholder="Email"/>
-                                    <?php echo form_error('email'); ?>
+                                    <?php //echo form_error('email'); ?>
                                 </div>
                                 
-                                <div class="clearfix"></div>
-
-                                <div class="input-prepend" title="Password">
-                                    <span class="add-on"><i class="halflings-icon lock"></i></span>
-                                    <input class="input-large span10" name="password" id="password" type="password" placeholder="Password"/>
-                                    <?php echo form_error('password'); ?>
-                                </div>
+                                
                                 <div class="clearfix"></div>
                                 <div class="input-prepend" >
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
@@ -107,7 +108,7 @@
                                         <option value="1">Admin</option>
                                         <option value="2">Manger</option>
                                     </select>
-                                    <?php echo form_error('type'); ?>
+                                    <?php //echo form_error('type'); ?>
                                 </div>
 
                                 <!-- <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label> -->

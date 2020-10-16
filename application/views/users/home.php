@@ -44,7 +44,25 @@
                         <?php echo $category['password'];?>
                         </td>
                         <td class="center">
-                        <?php echo $category['type'];?>
+                        <?php 
+                        //echo $category['type'];
+                        $type = $category['type']; 
+                                                    
+
+                                                     if(!empty($type)){
+                                                        if ($type == 1 ){
+                                                            echo 'Admin';
+    
+                                                        } elseif ($type == 2) {
+                                                            echo 'Manager';
+                                                        } else {
+                                                            echo ' ';
+                                                        }
+
+                                                     } else {
+                                                         echo ' ';
+                                                     }
+                        ?>
                         </td>
                         <td class="center">
                             
