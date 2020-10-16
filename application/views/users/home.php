@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="box-content">
-            <h1><?php 
+            <h4 style ='color:green;'><?php 
              $message=$this->session->userdata('message');
              if($message){
                  echo $message;
@@ -17,7 +17,8 @@
              }
         
         ?>
-        </h1>
+        </h4>
+        </div>
             <table class="table table-striped table-bordered bootstrap-datatable datatable">
                 <thead>
                     <tr>

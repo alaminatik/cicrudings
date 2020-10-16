@@ -206,4 +206,19 @@ class User extends CI_Controller {
         $this->session->set_userdata($sdata);
         return redirect('user');
     }
+
+    public function profile($id){
+
+        $where = array(
+            'id' => $id,          
+        );
+
+
+        $data=array();
+        
+        $data['user_profile']=$this->User_model->get_data('users','',$where);
+
+        $data['home_content'] = $this->load->view('users/profile',$data,true);
+        $this->load->view('users/master', $data);
+    }
 }
