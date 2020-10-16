@@ -74,7 +74,7 @@
                             ?>
                         </h3>
                         <h2 align='center'>User registration</h2>
-                        <?php echo validation_errors(); ?>
+                        <?php //echo validation_errors(); ?>
                         <form class="form-horizontal" action="<?php echo base_url(); ?>adduser" method="post">
                             <fieldset>
 

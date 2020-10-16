@@ -64,12 +64,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="index.html"><span>Metro</span></a>
+                    <a class="brand" href="#"><span>Cicruding</span></a>
 
                     <!-- start: Header Menu -->
                     <div class="nav-no-collapse header-nav">
                         <ul class="nav pull-right">
-                            <li class="dropdown hidden-phone">
+                            <!-- <li class="dropdown hidden-phone">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                     <i class="halflings-icon white warning-sign"></i>
                                 </a>
@@ -152,9 +152,9 @@
                                         <a>View all notifications</a>
                                     </li>	
                                 </ul>
-                            </li>
+                            </li> -->
                             <!-- start: Notifications Dropdown -->
-                            <li class="dropdown hidden-phone">
+                            <!-- <li class="dropdown hidden-phone">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                     <i class="halflings-icon white tasks"></i>
                                 </a>
@@ -212,10 +212,10 @@
                                         <a class="dropdown-menu-sub-footer">View all tasks</a>
                                     </li>	
                                 </ul>
-                            </li>
+                            </li> -->
                             <!-- end: Notifications Dropdown -->
                             <!-- start: Message Dropdown -->
-                            <li class="dropdown hidden-phone">
+                            <!-- <li class="dropdown hidden-phone">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                     <i class="halflings-icon white envelope"></i>
                                 </a>
@@ -308,13 +308,13 @@
                                         <a class="dropdown-menu-sub-footer">View all messages</a>
                                     </li>	
                                 </ul>
-                            </li>
+                            </li> -->
                             <!-- end: Message Dropdown -->
-                            <li>
+                            <!-- <li>
                                 <a class="btn" href="#">
                                     <i class="halflings-icon white wrench"></i>
                                 </a>
-                            </li>
+                            </li> -->
                             <!-- start: User Dropdown -->
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -325,7 +325,7 @@
                                     <li class="dropdown-menu-title">
                                         <span>Account Settings</span>
                                     </li>
-                                    <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
+                                    <li><a href="<?= base_url();?>profile/<?php echo $this->session->userdata('id'); ?>"><i class="halflings-icon user"></i> Profile</a></li>
                                     <li><a href="<?php echo base_url(); ?>logout"><i class="halflings-icon off"></i> Logout</a></li>
                                 </ul>
                             </li>
@@ -346,7 +346,7 @@
                 <div id="sidebar-left" class="span2">
                     <div class="nav-collapse sidebar-nav">
                         <ul class="nav nav-tabs nav-stacked main-menu">
-                            <li><a href="<?php echo base_url(); ?>super_admin/dashboard"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+                            <li><a href="<?php echo base_url(); ?>dashboard"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
                         <?php if ($this->session->userdata('access_label') == 1) { ?>
                             <li>
                                 <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Category</span><span class="glyphicons-chevron-down" style="margin-left: 75px;"><i class="icon-caret-down"></i></span></a>
@@ -434,7 +434,7 @@
         <footer>
 
             <p>
-                <span style="text-align:left;float:left">&copy; 2017 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Farming Assistants Web Service</a></span>
+                <span style="text-align:left;float:left">&copy; 2020 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">CI Cruding</a></span>
 
             </p>
 

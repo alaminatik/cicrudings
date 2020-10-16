@@ -19,11 +19,11 @@
         ?>
         </h1>
         
-        <?php 
+        <a style='color:red;'><?php 
         // echo '<pre>';
         //             print_r($user_byid[0]['id']);
         //             exit;
-        echo validation_errors(); ?>
+        echo validation_errors(); ?></a>
                         <form class="form-horizontal" action="<?php echo base_url(); ?>updateuser" method="post">
                             <fieldset>
 
@@ -31,7 +31,7 @@
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
                                     <input class="input-large span10" name="id" value='<?php echo $user_byid[0]['id']; ?>' id="username" type="hidden" placeholder="id"/>
                                     <input class="input-large span10" name="name" value='<?php echo $user_byid[0]['name']; ?>' id="username" type="text" placeholder="Name"/>
-                                    <p><?php echo form_error('name'); ?></p>
+                                    <a style='color:red;'><?php //echo form_error('name'); ?></a>
                                     
                                 </div>
                                 
@@ -39,7 +39,7 @@
                                 <div class="input-prepend" title="Username">
                                     <span class="add-on"><i class="halflings-icon user"></i></span>
                                     <input class="input-large span10" name="email" value='<?php echo $user_byid[0]['email']; ?>' id="username" type="email" placeholder="Email"/>
-                                    <?php echo form_error('email'); ?>
+                                    <?php //echo form_error('email'); ?>
                                 </div>
                                 
                                 <div class="clearfix"></div>
@@ -47,7 +47,7 @@
                                 <div class="input-prepend" title="Password">
                                     <span class="add-on"><i class="halflings-icon lock"></i></span>
                                     <input class="input-large span10" name="password" value='<?php echo $user_byid[0]['password']; ?>' id="password" type="password" placeholder="Password"/>
-                                    <?php echo form_error('password'); ?>
+                                    <?php //echo form_error('password'); ?>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="input-prepend" >
@@ -57,7 +57,7 @@
                                         <option value="1">Admin</option>
                                         <option value="2">Manger</option>
                                     </select>
-                                    <?php echo form_error('type'); ?>
+                                    <?php //echo form_error('type'); ?>
                                 </div>
 
                                 <!-- <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label> -->

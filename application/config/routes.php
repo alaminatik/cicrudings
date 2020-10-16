@@ -73,6 +73,7 @@ $route['user'] = 'User/manage_user';
 $route['adduser'] = 'User/add_user';
 $route['edituser/(:num)'] = 'User/edit_user/$1';
 $route['deleteuser/(:num)'] = 'User/deleteuser/$1';
+$route['profile/(:num)'] = 'User/profile/$1';
 $route['updateuser'] = 'User/update_user';
 //$route['deleteuser'] = 'User/delete_user';
 
